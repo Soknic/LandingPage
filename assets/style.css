@@ -56,19 +56,19 @@ html {
   scroll-behavior: smooth;
 }
 /*========== Variables Darkt theme ==========*/
-body.dark-theme{
-  --title-color: #F1F3F2;
-  --text-color: #C7D1CC;
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
   --body-color: #000000;
   --container-color: #303331;
 }
 /*========== Button Dark/Light ==========*/
-.change-theme{
+.change-theme {
   position: absolute;
   right: 1rem;
   top: 1.8rem;
   color: var(--text-color);
-  font-size:1rem ;
+  font-size: 1rem;
   cursor: pointer;
 }
 body {
@@ -322,6 +322,7 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
   padding: 0.75rem;
+  text-align: center;
 }
 
 .menu__img {
@@ -330,8 +331,7 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.menu__name,
-.menu__preci {
+.menu__name {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
@@ -340,22 +340,12 @@ img {
   font-size: var(--normal-font-size);
 }
 
-.menu__detail,
-.menu__preci {
+.menu__detail {
   font-size: var(--small-font-size);
 }
 
 .menu__detail {
   margin-bottom: var(--mb-1);
-}
-
-.menu__button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  padding: 0.625rem 0.813rem;
-  border-radius: 0.5rem 0 0.5rem 0;
 }
 
 /*========== APP ==========*/
@@ -512,18 +502,18 @@ img {
     margin: 0 var(--mb-1) 0 0;
   }
 }
-@media screen and (min-width: 960px){
-  .bd-container{
+@media screen and (min-width: 960px) {
+  .bd-container {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .home__img{
+  .home__img {
     width: 500px;
   }
 
   .about__container,
-  .app__container{
+  .app__container {
     column-gap: 7rem;
   }
 }

@@ -20,20 +20,20 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const links = document.querySelectorAll('.nav__link');
-const sections = document.querySelectorAll('section');
+const links = document.querySelectorAll(".nav__link");
+const sections = document.querySelectorAll("section");
 
 function changeLinkState() {
   let index = sections.length;
 
-  while(--index && window.scrollY + 20 < sections[index].offsetTop) {}
-  
-  links.forEach((link) => link.classList.remove('active-link'));
-  links[index].classList.add('active-link');
+  while (--index && window.scrollY + 20 < sections[index].offsetTop) {}
+
+  links.forEach((link) => link.classList.remove("active-link"));
+  links[index].classList.add("active-link");
 }
 
 changeLinkState();
-window.addEventListener('scroll', changeLinkState);
+window.addEventListener("scroll", changeLinkState);
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
   const nav = document.getElementById("header");
